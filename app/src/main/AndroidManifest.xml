@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mybudgetapp">
+
+    <application
+        android:label="@string/app_name"
+        android:theme="@style/Theme.MyBudgetApp">
+        
+        <activity android:name="com.example.mybudgetapp.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="com.example.mybudgetapp.IncomeActivity"
+            android:exported="false" />
+        <activity android:name="com.example.mybudgetapp.ExpenseActivity"
+            android:exported="false" />
+        <activity android:name="com.example.mybudgetapp.BalanceActivity"
+            android:exported="false" />
+        <activity android:name="com.example.mybudgetapp.SavingsActivity"
+            android:exported="false" />
+        <activity android:name="com.example.mybudgetapp.LedgerActivity"
+            android:exported="false" />
+        <activity android:name="com.example.mybudgetapp.ForecastActivity"
+            android:exported="false" />
+
+    </application>
+
+</manifest>
+
+
+
+

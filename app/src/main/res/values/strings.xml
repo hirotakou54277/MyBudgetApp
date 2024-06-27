@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MyBudgetApp</string>
+    <string name="income">収入</string>
+    <string name="expense">支出</string>
+    <string name="balance">残金</string>
+    <string name="savings">預金設定</string>
+    <string name="ledger">金銭通帳</string>
+    <string name="forecast">AI予測</string>
+    <string name="change_background">背景画像を変更</string>
+    <string name="total_savings">今の貯金額: ¥%1$.2f</string>
+</resources>

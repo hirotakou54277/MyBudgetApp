@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="残金"
+        android:textSize="24sp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/currentBalanceInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="現在の残金を入力"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/updateBalanceButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="更新"
+        android:onClick="updateBalance"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/dailyBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="日: ¥0.00"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/weeklyBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="週: ¥0.00"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/monthlyBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="月: ¥0.00"
+        android:layout_marginBottom="8dp"/>
+</LinearLayout>

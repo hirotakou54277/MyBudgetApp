@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/monthlySavings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="毎月使える金額: "
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/weeklySavings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="毎週使える金額: "
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/dailySavings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="毎日使える金額: "
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- グラフ表示用のプレースホルダー -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="収入と支出と残金の推移"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"/>
+
+        <ImageView
+            android:id="@+id/forecastGraph"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="グラフ表示" />
+
+        <!-- リスト表示用のプレースホルダー -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="収入項目リスト"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"/>
+
+        <ListView
+            android:id="@+id/incomeListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp" />
+
+        <!-- 調整後の使える金額表示 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="調整後の使える金額表示"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/adjustedSavings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="運用額: +¥5,000 (+10％)"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/adjustedMonthlySavings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="毎月使える金額: ¥50,000"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/adjustedWeeklySavings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="毎週使える金額: ¥12,500"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/adjustedDailySavings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="毎日使える金額: ¥1,785"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- PDF出力ボタン -->
+        <Button
+            android:id="@+id/pdfExportButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PDF出力"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+</ScrollView>

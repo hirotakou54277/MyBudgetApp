@@ -1,0 +1,11 @@
+# Example .gitignore for an Android project
+
+*.iml
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+/out
+/build
+.DS_Store
+/app/build/

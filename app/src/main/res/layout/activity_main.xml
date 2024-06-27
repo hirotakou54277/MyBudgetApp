@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/incomeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="収入" />
+
+    <Button
+        android:id="@+id/expenseButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="支出" />
+
+    <Button
+        android:id="@+id/balanceButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="残金" />
+
+    <Button
+        android:id="@+id/savingsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="預金設定" />
+
+    <Button
+        android:id="@+id/ledgerButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="金銭通帳" />
+
+    <Button
+        android:id="@+id/forecastButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="AI予測" />
+
+</LinearLayout>
+
+
+
