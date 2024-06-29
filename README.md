@@ -17,6 +17,197 @@ MyBudgetApp is an Android application designed to help users manage their financ
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
+MyBudget App Overview and Features
+
+The MyBudget app is an AI household budgeting application that helps users effectively manage their personal finances. The main features are as follows
+
+    Home Screen
+        The central screen of the app, providing access to key features such as income, expenses, balance, AI deposit settings, money book, and AI forecasting.
+
+    Income Management
+        Allows users to manage income by category and set the next income date. For example, register income from salary, supplemental income, bonuses, etc., and perform periodic income forecasting.
+
+    Expense Management
+        Allows management of expenses by category and input of amounts. Register expenses such as food, transportation, utilities, etc., and record daily expenses.
+
+    Remaining balance management
+        The current remaining balance can be displayed and updated. Users can input their actual remaining balance and have it reflected in the AI forecast.
+
+    AI Forecasting
+        AI analyzes income and expenditure trends and calculates a daily average of the amount of money available until the next income date. In addition, it suggests an adjusted usable amount based on the predicted financial situation.
+
+    Money Passbook
+        Records past income and expense history with date and time, and calculates current savings. It clarifies the history of income, expenses, and remaining balance, and visualizes the financial transition.
+
+    AI Deposit Setting
+        Set the target savings amount and target achievement date; AI predicts the amount of savings required to reach the target and displays the estimated date of achievement.
+
+Image of the flow
+
+    User registration and initial settings
+        After downloading the application, users create an account and perform initial settings for income and expenses.
+
+    Use of Home Screen
+        The home screen provides access to income management, expense management, balance management, and AI forecasting.
+
+    Income Management
+        Enter amounts by income category and set the next income date. Income is automatically forecasted according to the periodicity of income.
+
+    Expense Management
+        Select an expense category and enter the amount. Daily expenses are recorded and reflected in the AI forecast.
+
+    Remaining balance management
+        Enter the current balance and click the "Update" button to reflect it in the AI forecast. Changes in the remaining balance will be displayed in a graph.
+
+    Use of AI Forecasting
+        AI learns patterns of income and expenditure and calculates the amount of money available until the next income date. It compares the forecasted amount with the actual remaining balance and makes appropriate adjustments.
+
+    Confirmation of money book
+        Past income/expense history is displayed with date and time, and the current savings amount is calculated. PDF output is also available.
+
+Detailed screen for each button
+
+    Income Management: Allows entry of each income category and amount, and setting of the next income date.
+    Expense Management: Enter expense categories and amounts, and check expense history.
+    Balance Management: Enter and update the current balance, and view AI forecast results.
+    AI Prediction: Graph income and expense trends, display predicted spendable amounts, and suggest spendable amounts after adjustments.
+    Money Passbook: Check past income/expense history and current savings, PDF output function.
+
+User input flow
+
+    Income Input: Input income category and amount, select next income date.
+    Expense entry: Enter expense categories and amounts, and record expense history.
+    Update Balance: Enter the current balance and click the Update button to reflect it in the AI forecast.
+    AI Forecast Confirmation: Review income/expense patterns and forecast results, and make financial plans based on the amount of money available after adjustments.
+
+Through these flows and features, users can effectively manage their personal finances and support future planning and actions to achieve their goals.
+
+    Homescreen
+    ---------------------------------
+    | AI Household Budgeting App |
+    ---------------------------------
+    | Income | Expenses | Balance
+    ---------------------------------
+    | AI Deposit Settings | Moneybooker | AI Predictor | AI Predictor
+    ---------------------------------
+    Income Screen
+    
+    ---------------------------------
+    | Income | AI Forecasting
+    ---------------------------------
+    | Category Name | Amount | | | Next Income Date
+    | Next Income Date | [Calendar Entry] |
+    ---------------------------------
+    | Salary | ¥300,000
+    ---------------------------------
+    | Additional income
+    ---------------------------------
+    | Bonus
+    ---------------------------------
+    | + button
+    ---------------------------------
+    | New category name | Amount |
+    ---------------------------------
+    | [text input] | [text input] | [text input] | [text input] | [text input] | [text input] | [text input] | [text input] | [text input
+    ---------------------------------
+    | [Save button] |
+    ---------------------------------
+    
+    Expense screen
+    
+    ---------------------------------
+    | Expenditure |
+    ---------------------------------
+    | Category Name | Amount |
+    ---------------------------------
+    | Food expense | ¥30,000 |
+    ---------------------------------
+    | Transportation
+    ---------------------------------
+    | Utilities - ¥15,000
+    ---------------------------------
+    | + button | ¥10,000
+    ---------------------------------
+    | New category name | Amount |
+    ---------------------------------
+    | [text input] | [text input] | [text input] | [text input] | [text input] | [text input] | [text input] | [text input] | [text input
+    ---------------------------------
+    | [Save button] |
+    ---------------------------------
+    
+    Balance screen
+    
+    ---------------------------------
+    | [Save button] | [Residuals
+    ---------------------------------
+    | Current balance | ¥100,000 |
+    ---------------------------------
+    | [Enter text] |
+    ---------------------------------
+    | [Update button] |
+    ---------------------------------
+    | [AI Prediction: Amount of money you can spend] |
+    ---------------------------------
+    day: ¥5,000 week: ¥35,000 | month: ¥150,000 | month: ¥150,000 | month: ¥150,000
+    | [AI Prediction: Amount of money you can spend] | [Update button] | [AI Prediction: Amount of money you can spend
+    ---------------------------------
+    
+    Deposit Setup Screen
+    ---------------------------------
+    | AI Deposit Setup |
+    ---------------------------------
+    | Target Amount | ¥500,000 |
+    ---------------------------------
+    | Target Date | [Enter Calendar] |
+    ---------------------------------
+    | [Save button] |
+    ---------------------------------
+    | [AI Prediction: Expected achievement] |
+    ---------------------------------
+    | [Estimated date: December 2024
+    ---------------------------------
+    
+    Moneybooker screen
+    ---------------------------------
+    | Moneybooks
+    ---------------------------------
+    | Date | Income | Expenditure | Balance
+    ---------------------------------
+    | 2024/06/24 | +¥300,000 | | | -¥30,000 | -¥10,000 | -¥10,000 | -¥30,000 | -¥10,000
+    | 2024/06/25 | -¥30,000 | -¥10,000 | -¥10,000
+    | 2024/06/26 | | -¥10,000 | -¥10,000
+    ---------------------------------
+    
+    ---------------------------------
+    | [Edit button] [Delete button] |
+    ---------------------------------
+    | [Export PDF button] |
+    ---------------------------------
+    
+    AI Prediction Screen
+    ---------------------------------
+    | AI Prediction |
+    ---------------------------------
+    | [Graphical Display] |
+    | Income, Expenditure and Remaining Balance |
+    ---------------------------------
+    | [Graph Display 2] |
+    | Trends in Investment Amounts |
+    --------------------------------- |
+    | [Adjusted Available Amount Displayed] |
+    | Amount of money invested: +¥5,000 (+10%) |
+    | Monthly Available Amount: ¥50,000
+    | The amount of money you can spend every week: ¥12,500
+    | Daily amount: ¥1,785
+    ---------------------------------
+    | If the balance is below the average, an adjustment will be shown.
+    | [Amount Available After Average Adjustment] |
+    ---------------------------------
+    | [Refresh button] |
+    ---------------------------------
+
+
+
 #MyBudgetApp
 
 MyBudgetアプリの概要と機能
