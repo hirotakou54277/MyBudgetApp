@@ -206,7 +206,47 @@ Through these flows and features, users can effectively manage their personal fi
     | [Refresh button] |
     ---------------------------------
 
+    Calculation of the amount available for the pro-rata average
 
+    The amount available for the pro-rated average is the amount available per day when the remaining balance is divided equally based on the period until the next income date.
+        Remaining balance: RR
+        Days until next income date: DD
+
+    The available amount of the daily average, AavgAavg, is calculated by the following formula
+    Aavg=RD
+    Aavg=DR
+
+    For example, if the balance is 100,000 yen and the next income date is in 20 days:
+    Aavg=100,00020=5,000 yen
+    Aavg=20100,000=5,000 yen
+
+    Calculation of the amount available after AI adjustment
+
+    The AI-adjusted spendable amount is an amount calculated based on the AI's projected future financial situation. This takes into account income, expenses, and changes in the remaining balance, but the specific calculation method depends on the AI's forecasting algorithm.
+
+    For example, the AI predicts expenditures until the next income date, and the AI-adjusted usable amount is the result of the calculation based on the change in the remaining balance.
+
+    Calculation of Operational Amount
+
+    The investment amount AdiffAdiff is the difference between the AI-adjusted usable amount and the daily average usable amount.
+    Adiff=Available amount after AI adjustment - Aavg
+    Adiff=Avg after AI adjustment - Aavg
+
+    For example, if the AI-adjusted available amount is 5,500 yen and the daily average available amount is 5,000 yen:
+    Adiff=5,500-5,000=500 yen
+    Adiff=5,500-5,000=500 yen
+
+    Calculation of percentage of operation amount
+
+    Adiff_percentAdiff_percent is the ratio of the amount under management to the daily average amount available.
+    Adiff_percent=(AdiffAavg)×100
+    Adiff_percent=(AavgAdiff)×100
+
+    For example, if the amount under management is 500 yen and the daily average usable amount is 5,000 yen:
+    Adiff_percent=(5005,000)×100=10
+    Adiff_percent=(5,000500)×100=10
+
+By implementing these calculations, the AI forecast page can accurately display the daily average amount available, the AI-adjusted amount available, the amount under management, and the percentage of the amount under management, providing useful information to the user.
 
 #MyBudgetApp
 
