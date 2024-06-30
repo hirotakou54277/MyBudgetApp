@@ -19,77 +19,87 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 MyBudget App Overview and Features
 
-The MyBudget app is an AI household budgeting application that helps users effectively manage their personal finances. The main features are as follows
+The MyBudget app is an AI family budgeting app that helps users effectively manage their personal finances. The main features are as follows
 
-    Home Screen
-        The central screen of the app, providing access to key features such as income, expenses, balance, AI deposit settings, money book, and AI forecasting.
+    Home screen
+        This is the central screen of the app and provides access to the investment and investment amounts and key features such as income, expenses, balance, AI deposit settings, money book, and AI forecasting.
 
     Income Management
-        Allows users to manage income by category and set the next income date. For example, register income from salary, supplemental income, bonuses, etc., and perform periodic income forecasting.
+        The system allows users to manage income by category and set the next income date. For example, register income such as salary, supplemental income, bonuses, etc., and reflect them in the AI forecast.
 
     Expense Management
         Allows management of expenses by category and input of amounts. Register expenses such as food, transportation, utilities, etc., and record daily expenses.
 
     Remaining balance management
-        The current remaining balance can be displayed and updated. Users can input their actual remaining balance and have it reflected in the AI forecast.
+        Displays and updates the current remaining balance. Users can input their actual remaining balance and have it reflected in the AI forecast.
 
     AI Forecasting
-        AI analyzes income and expenditure trends and calculates a daily average of the amount of money available until the next income date. In addition, it suggests an adjusted usable amount based on the predicted financial situation.
+        AI analyzes income, expenses, and balance trends to visualize financial trends. The formula for calculating the "AI-adjusted amount available" is the AI forecast (based on the change in the balance until the next collection date) - the pro-rated forecasted amount of
+        The AI forecast is based on the balance of your financial situation and suggests the amount of money you can spend after adjustment.
 
-    Money Passbook
-        Records past income and expense history with date and time, and calculates current savings. It clarifies the history of income, expenses, and remaining balance, and visualizes the financial transition.
+    Moneybook
+        Records past income, expenses, and balance history with date and time, and calculates current savings. There is also the ability to print a PDF with a clear history of income, expenses, and remaining balance.
 
-    AI Deposit Setting
-        Set the target savings amount and target achievement date; AI predicts the amount of savings required to reach the target and displays the estimated date of achievement.
+    AI Deposit Settings
+        Set the target savings amount and target achievement date; AI will predict the required investment amount until the target is achieved and display the expected achievement date.
 
-Image of the flow
+Image of flow
 
     User registration and initial settings
-        After downloading the application, users create an account and perform initial settings for income and expenses.
+        After downloading the app, users create an account and perform initial settings for income, expenses, and balance.
 
-    Use of Home Screen
-        The home screen provides access to income management, expense management, balance management, and AI forecasting.
+    Use of the home screen
+        From the home screen, users can access investment amount trends, investment amount and investment rate, income management, expense management, balance management, AI forecasting, and more.
 
     Income Management
-        Enter amounts by income category and set the next income date. Income is automatically forecasted according to the periodicity of income.
+        Enter amounts by income category and set the next income date. The AI automatically predicts the "adjusted spendable amount" according to the periodicity of income.
 
     Expense Management
         Select an expense category and enter the amount. Daily expenses are recorded and reflected in the AI forecast.
 
     Remaining balance management
-        Enter the current balance and click the "Update" button to reflect it in the AI forecast. Changes in the remaining balance will be displayed in a graph.
-
+        Enter the current remaining balance, and click the "Update" button to reflect it in the AI forecast.
+        
     Use of AI Forecasting
-        AI learns patterns of income and expenditure and calculates the amount of money available until the next income date. It compares the forecasted amount with the actual remaining balance and makes appropriate adjustments.
+        AI learns the pattern of income, expenditure, and balance, and displays the transition in a graph. If you are overspending based on the "AI-adjusted spendable amount," you tighten up. If you are saving, it loosens up.
 
-    Confirmation of money book
-        Past income/expense history is displayed with date and time, and the current savings amount is calculated. PDF output is also available.
+    Checking your money book
+        A history of past income, expenses, and balances is displayed along with the date and time, and the current amount of savings is calculated. Savings = Income - (Expenses + Balance) can also be output as a PDF file.
 
-Detailed screen for each button
+Detailed screen of each button
 
-    Income Management: Allows entry of each income category and amount, and setting of the next income date.
+    Income Management: Allows entry of income categories and amounts, and setting of next income date.
     Expense Management: Enter expense categories and amounts, and check expense history.
-    Balance Management: Enter and update the current balance, and view AI forecast results.
-    AI Prediction: Graph income and expense trends, display predicted spendable amounts, and suggest spendable amounts after adjustments.
+    Remaining balance management: Enter and update current remaining balance, view AI forecast results.
+    AI Deposit Settings: Displays target savings amount and predicted target achievement date.
     Money Passbook: Check past income/expense history and current savings, PDF output function.
+    AI Predictions: Graphs of income and expense and balance trends, display of predicted spendable amounts, and suggestions for spendable amounts after adjustment.
+
 
 User input flow
 
-    Income Input: Input income category and amount, select next income date.
-    Expense entry: Enter expense categories and amounts, and record expense history.
+    Income input: Input income category and amount, select next income date.
+    Expense Entry: Enter expense category and amount, record expense history.
     Update Balance: Enter the current balance and click the Update button to reflect it in the AI forecast.
-    AI Forecast Confirmation: Review income/expense patterns and forecast results, and make financial plans based on the amount of money available after adjustments.
+    AI Forecast Confirmation: View income, expense, and balance patterns and forecast results, and plan financially based on the amount available after adjustments.
 
-Through these flows and features, users can effectively manage their personal finances and support future planning and actions to achieve their goals.
+Through these flows and features, users can effectively manage their personal finances and support future planning and actions to achieve their goals
 
     Homescreen
     ---------------------------------
     | AI Household Budgeting App |
     ---------------------------------
+    ---------------------------------
+    | [Graph Display 2] |
+    | Trends in Investment Amounts |
+    --------------------------------- 
+    | Investment amount: +¥5,000 (+10%)
+    --------------------------------- 
     | Income | Expenses | Balance
     ---------------------------------
-    | AI Deposit Settings | Moneybooker | AI Predictor | AI Predictor
+    | AI Deposit Settings | Money Passbook | AI Prediction
     ---------------------------------
+    
     Income Screen
     
     ---------------------------------
@@ -190,17 +200,13 @@ Through these flows and features, users can effectively manage their personal fi
     ---------------------------------
     | [Graphical Display] |
     | Income, Expenditure and Remaining Balance |
-    ---------------------------------
-    | [Graph Display 2] |
-    | Trends in Investment Amounts |
     --------------------------------- |
-    | [Adjusted Available Amount Displayed] |
-    | Amount of money invested: +¥5,000 (+10%) |
-    | Monthly Available Amount: ¥50,000
-    | The amount of money you can spend every week: ¥12,500
-    | Daily amount: ¥1,785
+    | [Adjusted amount of money available] |
+    Monthly spending: ¥50,000 | Weekly spending: ¥12,500 |
+    | The amount of money that can be used every week: ¥12,500 |
+    | Amount available every day: ¥1,785 |
     ---------------------------------
-    | If the balance is below the average, an adjustment will be shown.
+    | Displaying the amount of money available after the average adjustment
     | [Amount Available After Average Adjustment] |
     ---------------------------------
     | [Refresh button] |
@@ -255,10 +261,10 @@ MyBudgetアプリの概要と機能
 MyBudgetアプリは、ユーザーが個人の財務管理を効果的に行うためのAI家計簿アプリです。主な機能は以下の通りです：
 
     ホームスクリーン
-        アプリの中心となる画面で、収入、支出、残金、AI預金設定、金銭通帳、AI予測などの主要機能へのアクセスが提供されます。
+        アプリの中心となる画面で、運用額と運用額の推移と収入、支出、残金、AI預金設定、金銭通帳、AI予測などの主要機能へのアクセスが提供されます。
 
     収入管理
-        収入のカテゴリー別管理と次回収入日の設定が可能です。例えば、給料、副収入、ボーナスなどの収入を登録し、周期的な収入予測を行います。
+        収入のカテゴリー別管理と次回収入日の設定が可能です。例えば、給料、副収入、ボーナスなどの収入を登録し、AI予測に反映させます。
 
     支出管理
         支出のカテゴリー別管理と金額の入力ができます。食費、交通費、光熱費などの支出を登録し、日々の出費を記録します。
@@ -267,51 +273,54 @@ MyBudgetアプリは、ユーザーが個人の財務管理を効果的に行う
         現在の残金の表示と更新機能があります。ユーザーが実際に持っている残金を入力し、AI予測に反映させます。
 
     AI予測
-        AIが収支の推移を分析し、次回収入日までの使える金額を日割り平均で計算します。さらに、予測された金銭状況に基づいて調整後の使える金額を提案します。
+        AIが収入と支出と残高の推移を分析し、財務の推移を可視化します。「AI調整後の使える金額」の計算式はAI予測で(次回収入日までの残高の推移から
+        の日割り予測額)-(日割り平均値の使える金額)+(日割り平均値の使える金額)で使える金額金銭状況のバランスに基づいて調整後の使える金額を提案します。
 
     金銭通帳
-        過去の収支履歴を日時とともに記録し、現在の貯金額を計算します。収入、支出、残金の履歴を明確にし、財務の推移を可視化します。
+        過去の収入と支出と残高の履歴を日時とともに記録し、現在の貯金額を計算します。収入、支出、残金の履歴を明確にしてPDFに印刷する機能もあります。
 
     AI預金設定
-        目標の貯金額と目標達成日を設定します。AIが目標達成までの必要な貯金額を予測し、達成見込み日を表示します。
+        目標の貯金額と目標達成日を設定します。AIが目標達成までの必要な運用額を予測し、達成見込み日を表示します。
 
 フローのイメージ
 
     ユーザー登録と初期設定
-        アプリをダウンロード後、ユーザーはアカウントを作成し、収入や支出の初期設定を行います。
+        アプリをダウンロード後、ユーザーはアカウントを作成し、収入や支出や残高の初期設定を行います。
 
     ホームスクリーンの利用
-        ホームスクリーンから収入管理、支出管理、残金管理、AI予測などへのアクセスが可能です。
+        ホームスクリーンから運用額の推移、運用額と運用率、収入管理、支出管理、残金管理、AI予測などへのアクセスが可能です。
 
     収入管理
-        収入のカテゴリー別に金額を入力し、次回収入日を設定します。収入の周期性に合わせて自動的に収入が予測されます。
+        収入のカテゴリー別に金額を入力し、次回収入日を設定します。収入の周期性に合わせて自動的に「調整後の使える金額」をAIが予測します。
 
     支出管理
         支出のカテゴリーを選択し、金額を入力します。毎日の支出が記録され、AI予測に反映されます。
 
     残金管理
-        現在の残金を入力し、更新ボタンでAI予測に反映させます。残金の推移がグラフで表示されます。
-
+        現在の残金を入力し、更新ボタンでAI予測に反映させます。
+        
     AI予測の活用
-        AIが収支のパターンを学習し、次回収入日までの使える金額を計算します。予測金額と実際の残金を比較し、適切な調整を行います。
+        AIが収入と支出と残高のパターンを学習し、推移をグラフで表示されます。「AI調整後の使える金額」に基づき使いすぎている場合は引き締め。貯まっている場合には緩めます。
 
     金銭通帳の確認
-        過去の収支履歴が日時とともに表示され、現在の貯金額が計算されます。PDF出力も可能です。
+        過去の収入と支出と残高の履歴が日時とともに表示され、現在の貯金額が計算されます。貯金額=収入-(支出+残高)はPDF出力も可能です。
 
 各ボタンの詳細画面
 
     収入管理: 各収入カテゴリーと金額の入力、次回収入日の設定が可能。
     支出管理: 各支出カテゴリーと金額の入力、支出の履歴を確認。
     残金管理: 現在の残金の入力と更新、AI予測の結果の表示。
-    AI予測: 収入と支出の推移グラフ、予測された使える金額の表示、調整後の使える金額の提案。
+    AI預金設定：目標の貯金額と予測された目標達成日を表示します。
     金銭通帳: 過去の収支履歴と現在の貯金額の確認、PDF出力機能。
+    AI予測: 収入と支出と残高の推移グラフ、予測された使える金額の表示、調整後の使える金額の提案。
+
 
 ユーザーの入力フロー
 
     収入入力: 収入カテゴリーと金額の入力、次回収入日の選択。
     支出入力: 支出カテゴリーと金額の入力、支出の履歴を記録。
     残金更新: 現在の残金を入力し、更新ボタンでAI予測に反映。
-    AI予測確認: 収支のパターンと予測結果を確認し、調整後の使える金額を考慮して財務計画を立てる。
+    AI予測確認: 収入と支出と残高のパターンと予測結果を確認し、調整後の使える金額を考慮して財務計画を立てる。
 
 これらのフローと機能を通じて、ユーザーは効果的に個人の財務管理を行い、将来の計画や目標達成に向けたアクションをサポートします。
     ---------------------------------
